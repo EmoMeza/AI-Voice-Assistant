@@ -67,6 +67,11 @@ def play_audio(audio_file):
 
 def main():
     filename = "recorded_audio.wav"
+
+    if not os.path.exists(filename):
+        with open(filename, "w"):
+            pass
+
     while True:
         record_audio(AudioRecorder(filename))
         transcription, language = transcribe_audio(filename)

@@ -1,24 +1,35 @@
 # AI Voice Assistant
 
-AI Voice Assistant is a Python project that combines audio recording, voice transcription, interaction with an AI-based chatbot, and text-to-speech synthesis. This project allows users to engage in conversations with a chatbot using voice as input and output.
+AI Voice Assistant is a comprehensive Python project that integrates various AI technologies to enable natural language interactions through voice. It combines audio recording, voice transcription, interaction with an AI-based chatbot, and text-to-speech synthesis, all managed seamlessly within a Python environment.
+
+## How It Works
+
+The project flow begins with the user initiating audio recording, which is handled by Python scripts. Once the recording is complete, the audio is transcribed into text using advanced voice transcription algorithms, such as those provided by the Whisper library. The transcribed text is then sent to an AI-based chatbot for processing.
+
+The heart of the chatbot functionality lies in its connection to Ollama, a powerful AI platform. Ollama processes the user queries and generates appropriate responses based on sophisticated AI models trained on vast datasets. These responses are then sent back to the Python environment for further processing.
+
+Once the chatbot generates a response, it is converted into voice using text-to-speech synthesis techniques. OpenVoice, another essential component of the project, is utilized for this purpose. The synthesized voice is then played back to the user, completing the interaction loop.
+
 
 ## Features
 
-- **Audio Recording**: Users can start and stop audio recording by simply pressing Enter.
+- **Audio Recording**: Users can start and stop audio recording by simply pressing Enter. (TBD)
 - **Voice Transcription**: Recorded audio is transcribed into text using an AI model.
 - **Chatbot Interaction**: Transcribed text is sent to an AI-based chatbot that generates a response.
-- **Text-to-Speech Synthesis**: The chatbot's response is converted back into voice and played for the user.
-- **Conversation Continuation**: After each interaction, the user is prompted whether to continue the conversation.
+- **Text-to-Speech Synthesis**: The chatbot's response is converted back into voice and played for the user. 
+- **Conversation Continuation**: After each interaction, the user is prompted whether to continue the conversation. (TBD)
 
 ## Prerequisites
 
-Before running the project, make sure you have the following Python libraries installed:
+Before running the project, make sure you have the following prerequisites installed:
 
-- whisper
-- openai
-- pydub
+- **OpenVoice**: This project is used for voice synthesis. You can find it at [OpenVoice GitHub repository](https://github.com/myshell-ai/OpenVoice).
+- **Whisper**: Whisper is an open-source project used for voice transcription. You can find it at [Whisper GitHub repository](https://github.com/openai/whisper).
+- **Ollama**: Ollama, along with its sophisticated AI models, serves as the central intelligence of this project. Ollama, available at [ollama.com](https://ollama.com), provides the chatbot functionality and facilitates natural language interactions.
+- **CUDA-compatible GPU**: For better performance, it's recommended to have a graphics card that supports CUDA, especially if you're dealing with computationally intensive tasks like deep learning. This is optional but can significantly improve performance if available.
 
-Additionally, you'll need to download two files named checkpoint.pth and checkpoint_v2.pth and move them to the Resources/checkpoints directory.
+Make sure to install these prerequisites and set up your environment properly before running the project.
+
 
 ## Usage
 
