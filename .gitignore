@@ -118,11 +118,14 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-Resources/*
+
+#custom
+Resources/c*
+recorded_audio.wav
 
 # Environments
 .env
-.venv
+.venv*
 env/
 venv/
 ENV/

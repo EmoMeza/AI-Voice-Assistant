@@ -24,10 +24,10 @@ Additionally, you'll need to download two files named checkpoint.pth and checkpo
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies mentioned in the prerequisites.
-3. Download the checkpoint.pth and checkpoint_v2.pth files from the following links:
-   - checkpoint.pth (link-to-file)
-   - checkpoint_v2.pth (link-to-file)
-4. Move them to the Resources/checkpoints directory.
+3. Download the checkpoint and checkpoint_v2 folders from the following links:
+   - checkpoint ([link-to-file](https://myshell-public-repo-hosting.s3.amazonaws.com/openvoice/checkpoints_1226.zip))
+   - checkpoint_v2 ([link-to-file](https://myshell-public-repo-hosting.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip))
+4. Move them to the Resources/ directory.
 5. Run the main.py script from the command line.
 6. Follow the instructions in the console to start and stop audio recording, interact with the chatbot, and listen to the generated responses.
 
